@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guion AXE - Edición Limitada Copa Mundial FIFA 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #000;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 90%;
+            padding: 60px 40px;
+            position: relative;
+        }
+
+        .slide {
+            display: none;
+            animation: fadeIn 0.6s ease;
+        }
+
+        .slide.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .gold-line {
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, #D4AF37, #FFD700);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            background: linear-gradient(135deg, #D4AF37, #FFD700, #D4AF37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            color: #D4AF37;
+            margin-bottom: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #999;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        .dialogue {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            color: #fff;
+            font-weight: 400;
+        }
+
+        .stage-direction {
+            font-size: 1.1rem;
+            color: #D4AF37;
+            font-style: italic;
+            margin: 20px 0;
+            padding-left: 20px;
+            border-left: 3px solid #D4AF37;
+        }
+
+        .block-number {
+            font-size: 0.9rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .progress {
+            position: fixed;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 12px;
+            z-index: 1000;
+        }
+
+        .progress-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #333;
+            transition: all 0.3s ease;
+        }
+
+        .progress-dot.active {
+            background: linear-gradient(135deg, #D4AF37, #FFD700);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+        }
+
+        .click-hint {
+            position: fixed;
+            bottom: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.85rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+
+        .duration {
+            display: inline-block;
+            background: rgba(212, 175, 55, 0.1);
+            color: #D4AF37;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-left: 10px;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.1rem;
+            }
+            
+            .dialogue {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- SLIDE 1: Portada -->
+        <div class="slide active">
+            <div class="gold-line"></div>
+            <h1>AXE</h1>
+            <h2>Edición Limitada Copa Mundial FIFA 2026</h2>
+            <p class="subtitle">Guion de Video — Juanchi Roisman</p>
+            <p class="subtitle" style="margin-top: 60px; color: #D4AF37;">Duración total: 50-55 segundos</p>
+        </div>
+
+        <!-- SLIDE 2: Bloque 1 - Parte 1 -->
+        <div class="slide">
+            <div class="block-number">Bloque 1 <span class="duration">15-20 segs</span></div>
+            <h2>Apertura + Instalación</h2>
+            
+            <p class="stage-direction">[Plano: Caja cerrada sobre la mesa]</p>
+            
+            <p class="dialogue">"AXE me mandó una caja con cables y luces, así que vamos a ver qué tiene adentro."</p>
+        </div>
+
+        <!-- SLIDE 3: Bloque 1 - Parte 2 -->
+        <div class="slide">
+            <div class="block-number">Bloque 1 — Continúa</div>
+            <h2>Instalación con narración sorprendida</h2>
+            
+            <p class="stage-direction">[Abrís la caja - ASMR del cartón abriéndose]</p>
+            
+            <p class="dialogue">"Okay... tiene luces LED."</p>
+            
+            <p class="stage-direction">[Sacás los cables - ASMR de cables, bolsa plástica]</p>
+            
+            <p class="dialogue">"Cables... muchos cables."</p>
+        </div>
+
+        <!-- SLIDE 4: Bloque 1 - Parte 3 -->
+        <div class="slide">
+            <div class="block-number">Bloque 1 — Continúa</div>
+            <h2>Instalación con narración sorprendida</h2>
+            
+            <p class="stage-direction">[Ves el espejo/interior de la caja]</p>
+            
+            <p class="dialogue">"Espera, ¿esto es un espejo?"</p>
+            
+            <p class="stage-direction">[Seguís desempacando - sonidos de instalación]</p>
+            
+            <p class="dialogue">"Esto es más complejo de lo que pensé."</p>
+        </div>
+
+        <!-- SLIDE 5: Bloque 2 -->
+        <div class="slide">
+            <div class="block-number">Bloque 2 <span class="duration">5-8 segs</span></div>
+            <h2>Promesa + Transición</h2>
+            
+            <p class="stage-direction">[Dejás de tocar la caja. Mirás a cámara]</p>
+            
+            <p class="dialogue">"Todavía no les voy a mostrar cómo queda la caja instalada, pero ya les digo que esta edición limitada de AXE merece que yo le haga una edición de video top."</p>
+            
+            <p class="stage-direction">[Pausa]</p>
+            
+            <p class="dialogue">"Así que miren cómo queda:"</p>
+        </div>
+
+        <!-- SLIDE 6: Bloque 3 - Parte 1 -->
+        <div class="slide">
+            <div class="block-number">Bloque 3 <span class="duration">25-30 segs</span></div>
+            <h2>Hypermatch</h2>
+            
+            <p class="stage-direction">[Música oficial AXE arranca]</p>
+            <p class="stage-direction">[Sin voiceover - solo visual]</p>
+            
+            <p class="dialogue" style="margin-top: 40px;">1. Caja encendida (espejo infinito activo, luces LED doradas)</p>
+            
+            <p class="dialogue">2. Producto dentro de la caja (latas doradas reflejándose en el infinito)</p>
+        </div>
+
+        <!-- SLIDE 7: Bloque 3 - Parte 2 -->
+        <div class="slide">
+            <div class="block-number">Bloque 3 — Continúa</div>
+            <h2>Hypermatch</h2>
+            
+            <p class="dialogue">3. HYPERMATCH — Efecto infinito</p>
+            <p class="stage-direction">[Matchcuts sincronizados que replican/juegan con el concepto "infinito"]</p>
+            
+            <p class="dialogue" style="margin-top: 40px;">4. CIERRE — Vos aplicando el desodorante en "7" sobre tu remera</p>
+            <p class="stage-direction">[Último matchcut: spray → corte a negro o logo AXE]</p>
+            
+            <p class="stage-direction" style="margin-top: 40px;">[Música termina con el gesto del 7]</p>
+        </div>
+
+        <!-- SLIDE 8: Final -->
+        <div class="slide">
+            <div class="gold-line"></div>
+            <h1>FIN</h1>
+            <p class="subtitle">Guion aprobado — Listo para producción</p>
+            <p class="dialogue" style="margin-top: 60px; color: #D4AF37;">@axe.espanol</p>
+        </div>
+    </div>
+
+    <div class="progress">
+        <div class="progress-dot active"></div>
+        <div class="progress-dot"></div>
+        <div class="progress-dot"></div>
+        <div class="progress-dot"></div>
+        <div class="progress-dot"></div>
+        <div class="progress-dot"></div>
+        <div class="progress-dot"></div>
+        <div class="progress-dot"></div>
+    </div>
+
+    <div class="click-hint">Click para continuar</div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.progress-dot');
+        const totalSlides = slides.length;
+
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            currentSlide = (n + totalSlides) % totalSlides;
+            
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+
+        document.body.addEventListener('click', () => {
+            showSlide(currentSlide + 1);
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                showSlide(currentSlide + 1);
+            } else if (e.key === 'ArrowLeft') {
+                showSlide(currentSlide - 1);
+            }
+        });
+    </script>
+</body>
+</html>
